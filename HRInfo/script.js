@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const inputs = document.querySelectorAll('.inputbox input');
-    const select = document.querySelector('.inputbox select');
-    const selectLabel = select.nextElementSibling;
-
+    
     inputs.forEach(input => {
         const label = input.nextElementSibling;
 
@@ -33,38 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
-    select.addEventListener('change', () => {
-        if (select.value === '') {
-            selectLabel.classList.remove('label-top');
-            selectLabel.style.opacity = '1';
-        } else {
-            selectLabel.classList.add('label-top');
-            selectLabel.style.opacity = '0';
-        }
-    });
-
-    select.addEventListener('focus', () => {
-        if (select.value === '') {
-            selectLabel.classList.remove('label-top');
-            selectLabel.style.opacity = '1';
-        } else {
-            selectLabel.classList.add('label-top');
-            selectLabel.style.opacity = '0';
-        }
-    });
-
-    select.addEventListener('blur', () => {
-        if (select.value === '') {
-            selectLabel.classList.remove('label-top');
-            selectLabel.style.opacity = '1';
-        } else {
-            selectLabel.classList.add('label-top');
-            selectLabel.style.opacity = '0';
-        }
-    });
 });
-
 
 
 document.addEventListener('DOMContentLoaded', () => {

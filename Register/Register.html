@@ -11,7 +11,7 @@
     <body>
         <section>
             <form>
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <div class="inputbox">
                     <ion-icon name="person"></ion-icon>
                     <input type="text" required>
@@ -21,6 +21,15 @@
                     <ion-icon name="mail-outline"></ion-icon>
                     <input type="email" required>
                     <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <!-- <ion-icon name="person"></ion-icon> -->
+                    <select required style="background: transparent; width: 100%; height: 60px; border: none; outline: none; font-size: 1rem; padding: 0 35px 0 5px; color: #fff;">
+                        <option value=""></option>
+                        <option value="HR">HR</option>
+                        <option value="Applicant">Applicant</option>
+                    </select>
+                    <label for="">User Type</label>
                 </div>
                 <div class="inputbox">
                     <ion-icon name="lock-closed-outline" class="lock-icon"></ion-icon>
@@ -37,7 +46,7 @@
                     <label for="password" class="password-label">Password</label>
 
                 </div>
-                <button>Log in</button>
+                <button>Register</button>
                 <div class="register">
                     <p>Have an Account?  <a href="Login.html">LogIn</a></p>
                     <a href="#">Forget Password</a>

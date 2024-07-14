@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Responsive Registration Form </title>
+</head>
+<body>
+    <div class="container">
+        <header>Personal Information</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Work Experience</label>
+                            <select required>
+                                <option disabled selected>Select experience</option>
+                                <option>Fresher</option>
+                                <option>1-5 Years</option>
+                                <option>5-10 Years</option>
+                                <option>10-20 Years</option>
+                                <option>20+ Years</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Education</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Degree</label>
+                            <input type="text" placeholder="Enter degree name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CGPA</label>
+                            <input type="number" min="0" max="10" placeholder="Enter your CGPA" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Domain</label>
+                            <input type="text" placeholder="Enter your domain" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Job Position</label>
+                            <input type="text" placeholder="Enter your target position" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Degree Start Year</label>
+                            <input type="number" min="1980" max="2026" placeholder="Enter Degree Start Year" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Degree End Year</label>
+                            <input type="number" min="1980" max="2030" placeholder="Enter Degree End Year" required>
+                        </div>
+                    </div>
+
+                    <button class="submit" formaction="demo.html">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
